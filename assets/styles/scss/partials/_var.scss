@@ -1,0 +1,18 @@
+$colors: (
+    "primary": #0c4b6f,
+    "accent": #ffffff,
+    "text": #333333,
+);
+:root {
+    @each $name, $color in $colors {
+        --#{$name}: #{$color};
+        --#{$name}--light: #{$color}65;
+        --#{$name}--dark: #{darken($color, 10%)};
+    }
+    --padding: 1em;
+    --margin: 1em;
+    --top-padding: 0.5em;
+    --radius: 0.25rem;
+    --shadow: #00000011;
+    --overlay: #000000aa;
+}

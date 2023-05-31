@@ -1,0 +1,30 @@
+.add-and-sub {
+    width: 100%;
+    display: flex;
+    .quantity {
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 1rem;
+        background: transparent;
+    }
+    .btn {
+        padding: var(--top-padding) var(--padding);
+        border-radius: var(--radius);
+        flex-grow: 1;
+        cursor: pointer;
+        border: none;
+        background: var(--primary--dark);
+        color: var(--accent);
+        transition: 0.25s ease-in-out background;
+        outline: none;
+        &:is(:hover, :focus) {
+            background: var(--primary);
+        }
+        &:disabled {
+            cursor: default;
+            background: var(--primary--light) !important;
+        }
+    }
+}
