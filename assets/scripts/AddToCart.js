@@ -1,6 +1,6 @@
 import { Quantity } from "./Quanity.js";
 import { ProductCard } from "./ProductCard.js";
-let goods = await $.get("/assets/scripts/content.json", "null", "null", "json");
+let goods = await $.get("assets/scripts/content.json", "null", "null", "json");
 export function AddToCart() {
 	let handleClick = function () {
 		let parent = $(this).parents(".product");

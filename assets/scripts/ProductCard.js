@@ -5,7 +5,7 @@ import { Quantity } from "./Quanity.js";
 export function ProductCard({ image, id, price, inCart }) {
 	let section = $(`
     <div class="product" data-id="${id}">
-        <img src="/assets/images/${image}" alt="" class="product-image" />
+        <img src="assets/images/${image}" alt="" class="product-image" />
         <div class="details">
            <div class="top-detail">
                 <h3 class="product-name"> Product ${id}</h3>

@@ -1,5 +1,5 @@
 import { ProductCard } from "./ProductCard.js";
-let goods = await $.get("/assets/scripts/content.json", "null", "null", "json");
+let goods = await $.get("assets/scripts/content.json", "null", "null", "json");
 goods.forEach((good, index) => {
 	$(".products").append(ProductCard({ ...good }));
 });
